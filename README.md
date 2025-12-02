@@ -55,26 +55,6 @@ Open a specific stock directly using the URL scheme: alex.StocksApp://symbol/AAP
 
 The app will automatically enable the feed if it's disabled when navigating via deep link.
 
-## Project Structure
-
-StocksTracker/
-├── App/
-│   └── StocksApp.swift
-├── Models/
-│   └── Stock.swift
-├── ViewModels/
-│   └── StockDisplayViewModel.swift
-├── Views/
-│   ├── StockDisplayView.swift
-│   ├── StockDetailsView.swift
-│   ├── StockRowView.swift
-│   └── DetailRow.swift
-├── Managers/
-│   ├── WebSocketManager.swift
-│   ├── StorageManager.swift
-│   └── DeepLinkManager.swift
-└── [OTHER_DIRECTORIES]
-
 ## Contact
 
 - Developer: alex44013
