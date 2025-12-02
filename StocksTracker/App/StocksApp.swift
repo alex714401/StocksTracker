@@ -9,7 +9,8 @@ struct StocksApp: App {
     
     var body: some Scene {
         WindowGroup {
-            StockDisplayView(viewModel: StockDisplayViewModel(webSocketManager: webSocketManager))
+            StockDisplayView(viewModel: StockDisplayViewModel(webSocketManager: webSocketManager,
+                                                              storageManager: StocksStorageManager.shared))
                 .environmentObject(deepLinkManager)
                 .onOpenURL { url in
                     deepLinkManager.handleURL(url)
@@ -21,7 +22,7 @@ struct StocksApp: App {
     }
     
     private func handleScenePhaseChange(_ phase: ScenePhase, webSocketManager: StockWebSocketManager) {
-        let isFeedEnabled = StorageManager.shared.isFeedEnabled
+        let isFeedEnabled = StocksStorageManager.shared.isFeedEnabled
         
         switch phase {
         case .active:

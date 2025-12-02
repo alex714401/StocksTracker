@@ -1,7 +1,12 @@
 import Foundation
 
-final class StorageManager {
-    static let shared = StorageManager()
+protocol StorageManager {
+    var isFeedEnabled: Bool { get set }
+}
+
+
+final class StocksStorageManager: StorageManager {
+    static let shared = StocksStorageManager()
 
     private let userDefaults = UserDefaults.standard
 
@@ -13,7 +18,6 @@ final class StorageManager {
 
     var isFeedEnabled: Bool {
         get {
-            // If the key doesn't exist, return true (first launch default)
             if userDefaults.object(forKey: Keys.isFeedEnabled) == nil {
                 return true
             }

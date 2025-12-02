@@ -1,10 +1,3 @@
-//
-//  StocksTrackerUITestsLaunchTests.swift
-//  StocksTrackerUITests
-//
-//  Created by Aleksandar Angelov on 2.12.25.
-//
-
 import XCTest
 
 final class StocksTrackerUITestsLaunchTests: XCTestCase {
