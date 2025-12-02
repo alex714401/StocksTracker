@@ -19,9 +19,9 @@ A real-time iOS stock tracking application built with SwiftUI that displays live
 
 ## Requirements
 
-- iOS [VERSION]
-- Xcode [VERSION]
-- Swift [VERSION]
+- iOS 26.1
+- Xcode 26.1
+- Swift 5
 
 ## Installation
 
@@ -40,6 +40,13 @@ The project follows the **MVVM (Model-View-ViewModel)** pattern:
   - `WebSocketManager` - Handles real-time WebSocket data connections
   - `StorageManager` - Manages persistent data storage using UserDefaults
   - `DeepLinkManager` - Handles URL-based navigation to specific stocks
+
+  <img width="274" height="587" alt="StocksTracker-DeepLinking" src="https://github.com/user-attachments/assets/cec594d6-c7fa-46ec-8bd7-c9a19e266e9f" />
+
+  <img width="309" height="490" alt="StocksTracker-Lifecycle" src="https://github.com/user-attachments/assets/fd8ac481-a703-47ce-a080-26c220425b6f" />
+
+<img width="344" height="731" alt="StocksTracker-Diagram" src="https://github.com/user-attachments/assets/adfdd86e-1cfe-4ca8-a7a4-f6481d220aba" />
+
 
 ## Usage
 
